@@ -1,0 +1,57 @@
+Description: Fix spelling errors in source and binaries
+Author: Gudjon I. Gudjonsson <gudjon@gudjon.org>
+
+diff --git a/support/sdbinutils/ChangeLog b/support/sdbinutils/ChangeLog
+index 99ce993a..f8836966 100644
+--- a/support/sdbinutils/ChangeLog
++++ b/support/sdbinutils/ChangeLog
+@@ -15399,8 +15399,8 @@ Wed Apr 22 18:06:55 1992  K. Richard Pixley  (rich@rtl.cygnus.com)
+ 
+ Wed Apr 22 14:38:34 1992  Fred Fish  (fnf@cygnus.com)
+ 
+-	* configure:  Test for existance of files before trying to mv
+-	them, to avoid numerous non-existance messages.
++	* configure:  Test for existence of files before trying to mv
++	them, to avoid numerous non-existence messages.
+ 
+ Tue Apr 21 12:31:33 1992  K. Richard Pixley  (rich@cygnus.com)
+ 
+diff --git a/support/sdbinutils/bfd/ChangeLog-2006 b/support/sdbinutils/bfd/ChangeLog-2006
+index af3cbd41..02454efe 100644
+--- a/support/sdbinutils/bfd/ChangeLog-2006
++++ b/support/sdbinutils/bfd/ChangeLog-2006
+@@ -1375,7 +1375,7 @@
+ 
+ 	PR ld/2729
+ 	* peXXigen.c (_bfd_XXi_final_link_postscript): Check for the
+-	existance of output sections before putting their entries into the
++	existence of output sections before putting their entries into the
+ 	DataDictionary.
+ 
+ 2006-07-20  Thiemo Seufer  <ths@mips.com>
+diff --git a/support/sdbinutils/bfd/ChangeLog-2016 b/support/sdbinutils/bfd/ChangeLog-2016
+index 15e104ae..19c36dd0 100644
+--- a/support/sdbinutils/bfd/ChangeLog-2016
++++ b/support/sdbinutils/bfd/ChangeLog-2016
+@@ -2226,7 +2226,7 @@
+ 2016-06-24  Joel Brobecker  <brobecker@adacore.com>
+ 
+ 	* elflink.c: Check the value of BFD_SUPPORTS_PLUGINS rather
+-	than its existance.
++	than its existence.
+ 
+ 2016-06-24  Alan Modra  <amodra@gmail.com>
+ 
+diff --git a/support/sdbinutils/bfd/elfcode.h b/support/sdbinutils/bfd/elfcode.h
+index 00a90012..9dd7e861 100644
+--- a/support/sdbinutils/bfd/elfcode.h
++++ b/support/sdbinutils/bfd/elfcode.h
+@@ -751,7 +751,7 @@ elf_object_p (bfd *abfd)
+ 	{
+ 	  /* PR 2257:
+ 	     We used to just goto got_wrong_format_error here
+-	     but there are binaries in existance for which this test
++	     but there are binaries in existence for which this test
+ 	     will prevent the binutils from working with them at all.
+ 	     So we are kind, and reset the string index value to 0
+ 	     so that at least some processing can be done.  */
